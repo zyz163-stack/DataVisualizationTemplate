@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Echarts轮播插件</title>
+		<link rel="shortcut icon" href="#" />
+		<link rel="stylesheet" href="css/boston1.css">
+	</head>
+	<body>
+		<div class="all" id="all">
+			<div class="l_part">
+				<!--标题部分-->
+				<div class="l_part_top">
+					<div class="l_part_top_logo">
+						
+					</div>
+					<div class="l_part_top_title">
+						<p id="thisPageTitle"></p>
+					</div>
+				</div>
+				<!--间隔部分-->
+				<div class="l_part_blank"></div>
+				<!--数据显示部分-->
+				<div class="l_part_data">
+					<div class="l_part_data_num">
+						<div class="data l_data">
+							<div class="data_name">
+								<p>全国总计</p>
+							</div>
+							<div class="data_value data_value1">
+								<!--<p id="HosCnt">**</p>-->
+							</div>
+						</div>
+						
+						<div class="data m_data">
+							<div class="data_name">
+								<p id="name2">**</p>
+							</div>
+							<div class="data_value data_value2">
+								<!--<p id="value2">**</p>-->
+							</div>
+						</div>
+						
+						<div class="data r_data">
+							<div class="data_name">
+								<p id="name3">**</p>
+							</div>
+							<div class="data_value data_value3">
+								<!--<p id="value3">**</p>-->
+							</div>
+						</div>
+					</div>
+					<!--地图部分-->
+					<div class="l_part_data_map" id="l_part_data_map">
+						
+					</div>
+					<div class="provice_part" id="provice_part">
+						<div class="provice_part_top" id="provice_part_top">
+							<!--<p class="rank">排名</p>-->
+							<!--<p class="provice">省份</p>-->
+							<!--<p class="new_open">新开数</p>-->
+							<!--<p class="active_num">激活数</p>-->
+							<!--<p class="progress"></p>-->
+							<!--<p class="active_rate">激活率</p>-->
+						</div>
+						<div class="provice_part_bottom flipper flip" id="provice_part_bottom">
+							<div class="sort_front " id="sort_front">
+
+							</div>
+							<div class="sort_back " id="sort_back">
+
+							</div>
+							<button style="display: none;" id="changeShowSortData">反转</button>
+						</div>
+					</div>
+					<!--中国是不可分割的，南海部分是中国地图不可缺少的部分-->
+					<div class="nanHaiPart" style="display: none"></div>
+					<div class="icon_part" style="display: none;">
+						<div><img src="image/yellow.png" /><p>>100亿</p></div>
+						<div><img src="image/blue.png" /><p>>50亿</p></div>
+						<div><img src="image/green.png" /><p><50亿</p></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="r_part">
+				<!--top数据-->
+				<div class="r_top">
+					<div class="data1_left">
+						<div class="title1_blank"></div>
+						<div class="data1_title">
+							<p>山东省部分城市数据统计</p>
+						</div>
+						<div class="data1_value" id="data1_value">
+
+						</div>
+					</div>
+					<div class="data1_right">
+						<div class="data1_right_blank"></div>
+						<div class="data1_right_ball">
+							<div class="ball1_name">
+								<div class="area_name"><p id="data1_area_name">**</p></div>
+								<div class="value_name"><p id="data1_rate_name">**</p></div>
+							</div>
+							<div class="ball1_value">
+								<p id="data1_rate_value">**</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--middle数据-->
+				<div class="r_middle">
+					<div class="data2_left">
+						<div class="title2_blank"></div>
+						<div class="data2_title">
+							<p>上海市部分区域数据统计</p>
+						</div>
+						<div class="data2_value" id="data2_value">
+
+						</div>
+					</div>
+					<div class="data2_right">
+						<div class="data2_right_blank"></div>
+						<div class="data2_right_ball">
+							<div class="ball1_name">
+								<div class="area_name"><p id="data2_area_name">**</p></div>
+								<div class="value_name"><p id="data2_rate_name">**</p></div>
+							</div>
+							<div class="ball1_value">
+								<p id="data2_rate_value">**</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--bottom数据-->
+				<div class="bottom_blank"></div>
+				<div class="r_bottom">
+					<div class="r_bottom_title">
+						<p>全国范围数据统计趋势</p>
+					</div>
+					<div class="data3_value" id="data3_value">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/china.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/boston1.js"></script>
+<script type="text/javascript" src="js/echarts-auto-tooltip.js"></script>
